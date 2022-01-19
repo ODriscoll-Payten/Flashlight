@@ -14,6 +14,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func switchButtonTapped(_ sender: UIButton) {
+        if view.backgroundColor == .black {
+            view.backgroundColor = .white
+            sender.setTitle("ON", for: .normal)
+        }
+        else {
+            view.backgroundColor = .black
+            sender.setTitle("OFF", for: .normal)
+        }
+    }
+    
 }
 
